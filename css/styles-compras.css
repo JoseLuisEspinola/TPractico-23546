@@ -1,0 +1,190 @@
+/* Estilos generales */
+body {
+    /* font-family: Arial, sans-serif;*/
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 10px 20px;
+}
+
+.box {
+    text-align: center;
+    padding: 20px;
+    border: solid 2px;
+    margin: 0 4px;
+}
+
+.box1 {
+    border-color: #509def;
+}
+
+.box2 {
+    border-color: #3bb0c3;
+}
+
+.box3 {
+    border-color: #fec008;
+}
+
+.texto-des {
+    font-size: 20px;
+}
+
+.texto-doc {
+    opacity: 0.6;
+}
+
+#venta {
+    margin: 0;
+    padding: 0;
+}
+
+.texto-venta {
+    text-align: center;
+    font-size: 19px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.texto-valor {
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+/* Estilos CSS personalizados para el formulario */
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group label,
+.form-group input,
+.form-group select {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+.form-group label {
+    width: 100px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 5px;
+}
+
+.form-group select {
+    padding: 7px;
+}
+
+.form-group-total {
+    flex: 2;
+}
+
+/*
+/* Estilo para el campo "TEXT-TOTAL" y "TOTAL"
+#text-total, #total {
+    background-color: #bcd7f1;
+    color: #01017a;
+    border: none;
+    height: 48px;
+    font-size: 18px;
+    padding-left: 16px;
+    width: 100%; /* Cambiamos el ancho para que ocupen todo el espacio disponible 
+    border-radius: 5px;
+} */
+
+
+/* Estilo para el campo "TEXT-TOTAL" */
+#text-total {
+    background-color: #bcd7f1;
+    color: #01017a;
+    border: none;
+    height: 48px;
+    font-size: 18px;
+    padding-left: 16px;
+    width: 44%;
+    /*margin-right: 10px;*/
+    border-radius: 5px;
+}
+
+#text-total::placeholder {
+    color: #01017a;
+}
+
+/*Estilo para el campo "TOTAL" */
+#total {
+    background-color: #bcd7f1;
+    color: #01017a;
+    border: none;
+    height: 48px;
+    font-size: 18px;
+    padding-left: 16px;
+    width: 164%;
+    margin: 0% 0% 0% -64%;
+    border-radius: 5px;
+}
+
+/* color azul al label dentro del campo total */
+#total::placeholder {
+    color: #01017a;
+}
+
+/* Estilo para los botones */
+.form-group-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #96c93d;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 49%;
+}
+
+.btn-success {
+    background-color: #96c93d;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}

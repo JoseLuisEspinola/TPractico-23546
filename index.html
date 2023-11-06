@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="shortcut icon" type="Imagen" href="./img//buenosaires.png">
+	<link rel="shortcut icon" type="Imagen" href="./img/buenosaires.png">
 	<title>Conf Bs As</title>
 </head>
 
@@ -20,7 +20,7 @@
 				<li><a href="#oradores">Los oradores</a></li>
 				<li><a href="#lugaryfecha">El lugar y la fecha</a></li>
 				<li><a href="#convierteteorador">Conviertete en orador</a></li>
-				<li><a href="#zona1" class="comp-ticket">Comprar tickets</a></li>
+				<li><a href="compra-ticket.html" class="comp-ticket" target="_parent">Comprar tickets</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -36,7 +36,7 @@
 				nivel que tenemos para ti. Te esperamos!
 			</p>
 			<a href="#convierteteorador" class="boton-transparente" title="Podes cargar tus datos para ser orador!!!">Quiero ser orador</a>
-			<a href="#" class="boton-verde" title="Podes compra tu ticket para asistir al evento."> Comprar tickets </a>
+			<a href="compra-ticket.html" class="boton-verde" target="_blank" title="Podes compra tu ticket para asistir al evento."> Comprar tickets </a>
 		</div>
 	</section>
 	
@@ -155,12 +155,13 @@
 						<textarea class="form-control" id="mensaje" rows="6" placeholder="¿Sobre qué quieres hablar?"></textarea>
 					</div>
 					<p class="recuerdaTitulo">Recuerda incluir un título para tu charla</p>
-					<button type="submit" class="btn custom-btn-green col-auto w-100">Enviar</button>
+					<button type="button" class="btn custom-btn-green col-auto w-100" id="enviarBtn" onclick="enviarFormulario()">Enviar</button>
 				</form>
 			</div>
 		</div>
 	</div>
-	
+	<script src="./js/formulario-Oradores.js"></script>
+
 	<!---------- las cajas de opciones y el copying --------->
 	<footer>
 		<div class="footer-boxes">
@@ -174,5 +175,6 @@
 		</div>
 		<p class="copying">&copy; 2023 Conferencia Bs As - Todos los derechos reservados.</p>
 	</footer>
+	<script src="./js/formulario-Oradores.js"></script>
 </body>
 </html>

@@ -1,0 +1,2 @@
+# animated-enigma
+La compra de ticket es automatica, por lo tanto no hace falta apretar el boton resumen, de hecho dicho boton no existe, ya que el calculo se hace solo a medida que se modifican los valores.
